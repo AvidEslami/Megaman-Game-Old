@@ -188,6 +188,10 @@ function onclick(e)
     {
         upgradeState="3-e";
     }
+    else if ( currentScreen === "Upgrade" && mouse[0] < 474 && mouse[0] > 398 && mouse[1] > 277 && mouse[1] < 598 && upgradeState === "3-e")
+    {
+        upgradeState="4-e";
+    }
     
     
 }

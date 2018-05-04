@@ -845,7 +845,7 @@ function update() {
             // garbage collector
             if (playElements[i].y < -1600 || playElements[i].y > 1600 || playElements[i].x > 600 || playElements[i].x < -100) {
                 playElements.splice(i, 1);
-            } else if ((playElements[i].imgId === "projectile" || playElements[i].imgId === "projectile-2" || playElements[i].imgId === "water-1" || playElements[i].imgId === "water-2" || playElements[i].imgId === "water-3" || playElements[i].imgId === "water-4" || playElements[i].imgId === "water-3" || playElements[i].imgId === "water-5" || playElements[i].imgId === "grass-1" || playElements[i].imgId === "grass-2" || playElements[i].imgId === "grass-3" || playElements[i].imgId === "grass-4" || playElements[i].imgId === "grass-5") && playElements[i].y < 0) {
+            } else if ((playElements[i].imgId === "projectile" || playElements[i].imgId === "projectile-2" || playElements[i].imgId === "water-1" || playElements[i].imgId === "water-2" || playElements[i].imgId === "water-3" || playElements[i].imgId === "water-4" || playElements[i].imgId === "water-3" || playElements[i].imgId === "water-5" || playElements[i].imgId === "grass-1" || playElements[i].imgId === "grass-2" || playElements[i].imgId === "grass-3" || playElements[i].imgId === "grass-4" || playElements[i].imgId === "grass-5" || playElements[i].imgId === "elec-1" || playElements[i].imgId === "elec-2" || playElements[i].imgId === "elec-3" || playElements[i].imgId === "elec-4" || playElements[i].imgId === "elec-5") && playElements[i].y < 0) {
                 playElements.splice(i, 1);
             } else {
 
@@ -883,7 +883,7 @@ function update() {
                     bossAttackCooldown--;
                     // bullet collisions boss and megaman bullet
                     for (var j = 0; j < playElements.length; j++) {
-                        if (playElements[j].imgId === "projectile" || playElements[j].imgId === "projectile-2" || playElements[j].imgId === "water-1" || playElements[j].imgId === "water-2" || playElements[j].imgId === "water-3" || playElements[j].imgId === "water-4" || playElements[j].imgId === "water-3" || playElements[j].imgId === "water-5" || playElements[j].imgId === "grass-1" || playElements[j].imgId === "grass-2" || playElements[j].imgId === "grass-3" || playElements[j].imgId === "grass-4" || playElements[j].imgId === "grass-5" || playElements[j].imgId === "elec-1") {
+                        if (playElements[j].imgId === "projectile" || playElements[j].imgId === "projectile-2" || playElements[j].imgId === "water-1" || playElements[j].imgId === "water-2" || playElements[j].imgId === "water-3" || playElements[j].imgId === "water-4" || playElements[j].imgId === "water-3" || playElements[j].imgId === "water-5" || playElements[j].imgId === "grass-1" || playElements[j].imgId === "grass-2" || playElements[j].imgId === "grass-3" || playElements[j].imgId === "grass-4" || playElements[j].imgId === "grass-5" || playElements[j].imgId === "elec-1" || playElements[j].imgId === "elec-2" || playElements[j].imgId === "elec-3" || playElements[j].imgId === "elec-4" || playElements[j].imgId === "elec-5") {
                             colValue = colCheck(playElements[i], playElements[j]);
 
                             if (colValue === "l" || colValue === "r" || colValue === "b" || colValue === "t") {
@@ -931,6 +931,26 @@ function update() {
                                     bossHits += 10;
                                 } else if (playElements[j].imgId == "grass-5") {
                                     bossHits += 1;
+                                } else if (playElements[j].imgId == "elec-1") {
+                                    bossHits++;
+                                    bossHits++;
+                                } else if (playElements[j].imgId == "elec-2") {
+                                    bossHits++;
+                                    bossHits++;
+                                    bossHits++;
+                                    bossHits++;
+                                } else if (playElements[j].imgId == "elec-3") {
+                                    bossHits++;
+                                    bossHits++;
+                                    bossHits++;
+                                    bossHits++;
+                                    bossHits++;
+                                } else if (playElements[j].imgId == "elec-4") {
+                                    bossHits++;
+                                    bossHits++;
+                                    bossHits++;
+                                    bossHits++;
+                                    bossHits++;
                                 }
 
 
@@ -958,7 +978,7 @@ function update() {
                 //collision between Elebee and projectiles
                 if (playElements[i].imgId === "Elebee-r" || playElements[i].imgId === "Elebee-l") {
                     for (var j = 0; j < playElements.length; j++) {
-                        if (playElements[j].imgId === "projectile" || playElements[j].imgId === "projectile-2" || playElements[j].imgId === "water-1" || playElements[j].imgId === "water-2" || playElements[j].imgId === "water-3" || playElements[j].imgId === "water-4" || playElements[j].imgId === "water-3" || playElements[j].imgId === "water-5" || playElements[j].imgId === "grass-1" || playElements[j].imgId === "grass-2" || playElements[j].imgId === "grass-3" || playElements[j].imgId === "grass-4" || playElements[j].imgId === "grass-4-expand" || playElements[j].imgId === "grass-5" || playElements[j].imgId === "elec-1") {
+                        if (playElements[j].imgId === "projectile" || playElements[j].imgId === "projectile-2" || playElements[j].imgId === "water-1" || playElements[j].imgId === "water-2" || playElements[j].imgId === "water-3" || playElements[j].imgId === "water-4" || playElements[j].imgId === "water-3" || playElements[j].imgId === "water-5" || playElements[j].imgId === "grass-1" || playElements[j].imgId === "grass-2" || playElements[j].imgId === "grass-3" || playElements[j].imgId === "grass-4" || playElements[j].imgId === "grass-4-expand" || playElements[j].imgId === "grass-5" || playElements[j].imgId === "elec-1" || playElements[j].imgId === "elec-2" || playElements[j].imgId === "elec-3" || playElements[j].imgId === "elec-4") {
 
                             colValue = colCheck(playElements[i], playElements[j]);
 
@@ -1577,6 +1597,68 @@ function update() {
                                 attackCooldown = 4;
                                 attackState--;
                             }
+                        } else if (upgradeState === "4-e") {
+                            playElements[i].imgId = "megaman-l";
+                            if (attackState == 0) {
+                                playElements.push({
+                                    x: playElements[i].x - 5,
+                                    y: playElements[i].y,
+                                    velX: 0,
+                                    velY: -10,
+                                    imgId: "elec-4",
+                                    directionX: "",
+                                    directionY: "",
+                                    width: 22,
+                                    height: 22
+                                });
+                                attackCooldown = 0.2;
+                                attackState++;
+                            } else {
+                                playElements.push({
+                                    x: playElements[i].x + 60,
+                                    y: playElements[i].y,
+                                    velX: 0,
+                                    velY: -10,
+                                    imgId: "elec-4",
+                                    directionX: "",
+                                    directionY: "",
+                                    width: 22,
+                                    height: 22
+                                });
+                                attackCooldown = 0.2;
+                                attackState--;
+                            }
+                        } else if (upgradeState === "5-e") {
+                            playElements[i].imgId = "megaman-l";
+                            if (attackState == 0) {
+                                playElements.push({
+                                    x: playElements[i].x - 5,
+                                    y: playElements[i].y,
+                                    velX: 0,
+                                    velY: -10,
+                                    imgId: "elec-4",
+                                    directionX: "",
+                                    directionY: "",
+                                    width: 22,
+                                    height: 22
+                                });
+                                attackCooldown = 0.2;
+                                attackState++;
+                            } else {
+                                playElements.push({
+                                    x: playElements[i].x + 60,
+                                    y: playElements[i].y,
+                                    velX: 0,
+                                    velY: -10,
+                                    imgId: "elec-4",
+                                    directionX: "",
+                                    directionY: "",
+                                    width: 22,
+                                    height: 22
+                                });
+                                attackCooldown = 0.2;
+                                attackState--;
+                            }
                         }
 
 
@@ -1714,6 +1796,8 @@ function update() {
             ctx.drawImage(document.getElementById("elec-upgrade-3"), 0, 0);
         } else if (upgradeState === "3-e") {
             ctx.drawImage(document.getElementById("elec-upgrade-4"), 0, 0);
+        } else if (upgradeState === "4-e" || upgradeState === "5-e") {
+            ctx.drawImage(document.getElementById("elec-upgrade-5"), 0, 0);
         }
         
         
