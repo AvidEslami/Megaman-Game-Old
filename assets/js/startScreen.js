@@ -982,7 +982,7 @@ function update() {
 
                                 if (playElements[i].health < 1) {
                                     playElements[i].y = 700;
-                                    moneyHolder += 30;
+                                    moneyHolder += 200;
                                 }
 
                             }
