@@ -1014,25 +1014,25 @@ function update() {
                     }
 
                     if (keys[39] || keys[68]) {
-                        playElements[i].velX = playElements[i].velX + 2;
+                        playElements[i].velX = playElements[i].velX + 1;
                         if (playElements[i].velX > 1) {
                             playElements[i].directionX = "r";
                         }
                     }
                     if (keys[37] || keys[65]) {
-                        playElements[i].velX = playElements[i].velX - 2;
+                        playElements[i].velX = playElements[i].velX - 1;
                         if (playElements[i].velX < -1) {
                             playElements[i].directionX = "l";
                         }
                     }
                     if (keys[38] || keys[32] || keys[87]) {
-                        playElements[i].velY = playElements[i].velY - 2;
+                        playElements[i].velY = playElements[i].velY - 1;
                         if (playElements[i].velY < -1) {
                             playElements[i].directionY = "u";
                         }
                     }
                     if (keys[83] || keys[40]) {
-                        playElements[i].velY = playElements[i].velY + 2;
+                        playElements[i].velY = playElements[i].velY + 1;
                         if (playElements[i].velY > 1) {
                             playElements[i].directionY = "d";
                         }
