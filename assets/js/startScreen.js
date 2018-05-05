@@ -942,19 +942,14 @@ function update() {
                                 } else if (playElements[j].imgId == "elec-3") {
                                     bossHits++;
                                     bossHits++;
-                                    bossHits++;
-                                    bossHits++;
-                                    bossHits++;
+
                                 } else if (playElements[j].imgId == "elec-4") {
                                     bossHits++;
-                                    bossHits++;
-                                    bossHits++;
-                                    bossHits++;
-                                    bossHits++;
+
                                 }
 
 
-                                if (bossHits > 15) {
+                                if (bossHits > 50) {
                                     bossHealth.pop();
                                     bossHits = 0;
                                     //upgradeState++;
@@ -1580,7 +1575,7 @@ function update() {
                                     width: 22,
                                     height: 22
                                 });
-                                attackCooldown = 4;
+                                attackCooldown = 2;
                                 attackState++;
                             } else {
                                 playElements.push({
@@ -1594,7 +1589,7 @@ function update() {
                                     width: 22,
                                     height: 22
                                 });
-                                attackCooldown = 4;
+                                attackCooldown = 2;
                                 attackState--;
                             }
                         } else if (upgradeState === "4-e") {
